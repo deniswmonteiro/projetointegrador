@@ -1,0 +1,148 @@
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  display: flex;
+	flex-direction: column;
+  min-height: 100vh;
+}
+
+section {
+  flex: 1;
+}
+
+h1, h3 {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+span {
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #6869c0;
+  transition: .4s;
+}
+
+footer {
+  margin-top: 60px;
+  color: #fff;
+}
+
+.uk-navbar-container {
+  margin-bottom: 60px;
+  background-color: #3E3F95 !important;
+  padding-right: 65px;
+}
+
+.uk-navbar-nav li a {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  transition: .4s;
+}
+
+.uk-navbar-nav li a:hover, .uk-nav li a:hover {
+  color: #FEF011;
+}
+
+.active {
+  color: #FEF011 !important;
+}
+
+.uk-navbar-toggle {
+  opacity: 0;
+}
+
+.uk-offcanvas-bar {
+  background-color: #6869c0 !important;
+}
+
+.sobre .modalidades-descricao h4::after, .contatos h3::after,
+.home h1::after, .sobre h1::after, .historia h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #FEF011;
+  margin-top: 10px;
+}
+
+/* HOME */
+.home .card-alerta {
+  color: #fff;
+  background: red;
+  animation: mudaBackground 1s ease-in infinite;
+}
+
+@keyframes mudaBackground {
+  from {
+     background: #f33;
+  }
+  to { 
+    background: #b00;
+  }
+}
+
+/* SOBRE */
+.sobre .modalidades-descricao .uk-padding {
+  background-color: #3E3F95;
+}
+
+.sobre .modalidades-descricao h4, .modalidades-descricao p {
+  color: #fff;
+}
+
+.sobre .tecnicos, .equipamentos, .modalidades, .links-uteis {
+  margin-top: 40px;
+}
+
+.sobre .selecao {
+  margin-top: 30px;
+}
+
+/* HISTÓRIA */
+.historia .uk-card {
+  border-radius: 4px;
+}
+
+.historia h1 {
+  margin-bottom: 30px;
+}
+
+/* RODAPÉ */
+.contatos {
+  background: #3E3F95;
+  padding: 30px 0;
+}
+
+.contatos h3 {
+  color: #fff;
+}
+
+.copyright {
+  background: #6869c0;
+  padding: 20px 0;
+}
+
+.copyright .copy {
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .uk-navbar-toggle {
+    opacity: 1;
+  }
+
+  .uk-navbar-nav {
+    display: none;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+}
